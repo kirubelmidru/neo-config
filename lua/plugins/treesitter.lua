@@ -18,6 +18,7 @@ return {
 		"javascript",
 		"html",
 		"css",
+		"scss",
 		"svelte",
 	    },
 	    incremental_selection = {
