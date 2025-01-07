@@ -9,7 +9,7 @@ return {
 	"williamboman/mason-lspconfig.nvim",
 	config = function()
 	    require("mason-lspconfig").setup({
-		ensure_installed = { "lua_ls" , "rust_analyzer", "cssls" },
+		ensure_installed = {"cssls", "erlangls", "lua_ls" , "rust_analyzer"},
 	    })
 	end
     },
@@ -17,10 +17,10 @@ return {
 	"neovim/nvim-lspconfig",
 	config = function()
 	    local lspconfig = require("lspconfig")
-	    lspconfig.lua_ls.setup({})
-	    lspconfig.tailwindcss.setup({})
-	    lspconfig.rust_analyzer.setup({})
 	    lspconfig.cssls.setup({})
+	    lspconfig.erlangls.setup({})
+	    lspconfig.lua_ls.setup({})
+	    lspconfig.rust_analyzer.setup({})
 
 	    vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 	    vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})

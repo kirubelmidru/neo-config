@@ -6,19 +6,19 @@ return {
 	local configuration = require("nvim-treesitter.configs")
 
 	-- configure treesitter
-	configuration.setup({ 
+	configuration.setup({
 	    highlight = { enable = true },
 	    indent = { enable = true },
 	    ensure_installed = {
-		"lua",
 		"c",
-		"rust",
-		"haskell",
-		"json",
-		"javascript",
-		"html",
 		"css",
-		"scss",
+		"erlang",
+		"html",
+		"javascript",
+		"json",
+		"lua",
+		"nix",
+		"rust",
 		"svelte",
 	    },
 	    incremental_selection = {
